@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="xxgam.oracle.apps.xbol.tm.freight.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="DownloadVO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.server.DownloadVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="MaterialMVO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.server.MaterialMVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="RequestAM"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.server.RequestAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="RequestUserVO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.server.RequestUserVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="RequestVO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.server.RequestVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

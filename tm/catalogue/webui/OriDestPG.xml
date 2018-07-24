@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="xxgam.oracle.apps.xbol.tm.catalogue.server.catalogueAM" windowTitle="Catálogo de origen - destino." controllerClass="xxgam.oracle.apps.xbol.tm.catalogue.webui.OriDestCO" title="Catálogo de origen - destino.">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="FilterRN" searchRegion="true">
+               <ui:contents>
+                  <oa:messageTextInput id="Country" prompt="País" vAlign="middle"/>
+                  <oa:messageTextInput id="State" prompt="Estado" vAlign="middle"/>
+                  <oa:messageTextInput id="Location" prompt="Ubicación" vAlign="middle"/>
+                  <oa:messageTextInput id="dateTest" dataType="DATE" prompt="Fecha de creación"/>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:spacer id="item1" height="15"/>
+            <oa:pageButtonBar id="bttonbarRN">
+               <ui:contents>
+                  <oa:submitButton id="go" text="Filtrar" prompt="Filtrar" hAlign="right" rendered="${oa.OriDestVO1.IsRecordEnabled3}"/>
+                  <oa:submitButton id="new" text="Nuevo registro" prompt="Nuevo registro" hAlign="right" rendered="${oa.OriDestVO1.IsRecordEnabled3}"/>
+                  <oa:submitButton id="save" text="Guardar" prompt="Guardar" rendered="${oa.OriDestVO1.IsRecordEnabled4}"/>
+                  <oa:submitButton id="cancel" text="Cancelar" prompt="Cancelar" rendered="${oa.OriDestVO1.IsRecordEnabled4}"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+            <oa:table id="OriDest" width="100%">
+               <ui:contents>
+                  <oa:messageTextInput id="idoridest" rendered="false" viewName="OriDestVO1" viewAttr="OridestId" dataType="NUMBER"/>
+                  <oa:messageTextInput id="Code" dataType="VARCHAR2" prompt="Código" viewName="OriDestVO1" viewAttr="Code" maximumLength="255" readOnly="${oa.OriDestVO1.IsRecordEnabled}" required="yes"/>
+                  <oa:messageTextInput id="Description" dataType="VARCHAR2" prompt="Descripción" viewName="OriDestVO1" viewAttr="Description" maximumLength="255" readOnly="${oa.OriDestVO1.IsRecordEnabled}" required="yes"/>
+                  <oa:messageTextInput id="StateCode" dataType="VARCHAR2" prompt="Código de estado" viewName="OriDestVO1" viewAttr="StateCode" maximumLength="255" readOnly="${oa.OriDestVO1.IsRecordEnabled}" required="yes"/>
+                  <oa:messageTextInput id="StateDescription" dataType="VARCHAR2" prompt="Estado" viewName="OriDestVO1" viewAttr="StateDescription" maximumLength="255" readOnly="${oa.OriDestVO1.IsRecordEnabled}" required="yes"/>
+                  <oa:messageTextInput id="CountryCode" dataType="VARCHAR2" prompt="Código de país" viewName="OriDestVO1" viewAttr="CountryCode" maximumLength="255" readOnly="${oa.OriDestVO1.IsRecordEnabled}" queryable="true" required="yes"/>
+                  <oa:messageTextInput id="CountryDescription" dataType="VARCHAR2" prompt="País" viewName="OriDestVO1" viewAttr="CountryDescription" maximumLength="255" readOnly="${oa.OriDestVO1.IsRecordEnabled}" required="yes"/>
+                  <oa:messageTextInput id="LoadDate" dataType="DATE" prompt="Fecha de creación" viewName="OriDestVO1" viewAttr="LoadDate" readOnly="${oa.OriDestVO1.IsRecordEnabled}" required="yes"/>
+                  <oa:image id="UpdateAction" prompt="ACTUALIZAR" source="updateicon_enabled.gif" shortDesc="Actualizar registro" imageHeight="24" rendered="${oa.OriDestVO1.IsRecordEnabled2}">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="updateEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+                  <oa:image id="DeleteAction" prompt="ELIMINAR" source="deleteicon_enabled.gif" shortDesc="Eliminar registro" rendered="${oa.OriDestVO1.IsRecordEnabled2}">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="deleteEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+               </ui:contents>
+            </oa:table>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

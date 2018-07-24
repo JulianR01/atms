@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="xxgam.oracle.apps.xbol.tm.lov.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+   </DesignTime>
+   <Containee
+      Name="AreaUserVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.AreaUserVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="DestinationVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.DestinationVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="DistributionVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.DistributionVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="LovAM"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.LovAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="OriDestVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.OriDestVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="OriginVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.OriginVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="PriorityVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.PriorityVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ProvidersVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.ProvidersVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="TransportModeVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.TransportModeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ZonesVO"
+      FullName="xxgam.oracle.apps.xbol.tm.lov.server.ZonesVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

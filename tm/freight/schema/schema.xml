@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="schema"
+   SeparateXMLFiles="true"
+   PackageName="xxgam.oracle.apps.xbol.tm.freight.schema" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+   </DesignTime>
+   <Containee
+      Name="FkXxgamTmMaterialDtAssoc"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.schema.FkXxgamTmMaterialDtAssoc"
+      ObjectType="Association" >
+   </Containee>
+   <Containee
+      Name="MaterialDEO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.schema.MaterialDEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="MaterialMEO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.schema.MaterialMEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="RequestEO"
+      FullName="xxgam.oracle.apps.xbol.tm.freight.schema.RequestEO"
+      ObjectType="Entity" >
+   </Containee>
+</JboPackage>

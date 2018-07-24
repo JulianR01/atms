@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="xxgam.oracle.apps.xbol.tm.RatesM.search.server.RatesMAM" windowTitle="Busqueda" title="Busqueda" controllerClass="xxgam.oracle.apps.xbol.tm.RatesM.search.webui.RatesMCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="MainRN">
+               <ui:contents>
+                  <oa:messageLovInput id="Proveedor" queryable="true" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/PrividersRN" prompt="Proveedor">
+                     <lovMappings>
+                        <lovMap id="lovMap1" lovItem="Code" resultTo="Proveedor" criteriaFrom="Proveedor"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="Origen" queryable="true" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriginRN" prompt="Origen">
+                     <lovMappings>
+                        <lovMap id="lovMap2" lovItem="Code" resultTo="Origen" criteriaFrom="Origen"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="Destino" queryable="true" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/DestinationRN" prompt="Destino">
+                     <lovMappings>
+                        <lovMap id="lovMap3" lovItem="Code" resultTo="Destino" criteriaFrom="Destino"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageChoice id="Tipo" pickListViewDef="xxgam.oracle.apps.xbol.tm.poplist.server.TypeVO" pickListDispAttr="PoplistItems" pickListValAttr="PoplistItems" prompt="Tipo"/>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:pageButtonBar id="region1">
+               <ui:contents>
+                  <oa:submitButton id="BuscarBtn" prompt="Buscar"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+            <oa:table id="RatesVO1" width="100%">
+               <ui:contents>
+                  <oa:messageStyledText id="IdTarifa" dataType="NUMBER" prompt="IdTarifa" viewName="RatesVO1" viewAttr="IdTarifa" rendered="false"/>
+                  <oa:messageStyledText id="Origin" dataType="VARCHAR2" prompt="Origin" viewName="RatesVO1" viewAttr="Origin"/>
+                  <oa:messageStyledText id="RZone" dataType="VARCHAR2" prompt="RZone" viewName="RatesVO1" viewAttr="RZone"/>
+                  <oa:messageStyledText id="Destination" dataType="VARCHAR2" prompt="Destination" viewName="RatesVO1" viewAttr="Destination"/>
+                  <oa:messageStyledText id="ProviderNumber" dataType="NUMBER" prompt="ProviderNumber" viewName="RatesVO1" viewAttr="ProviderNumber"/>
+                  <oa:messageStyledText id="ProviderName" dataType="VARCHAR2" prompt="ProviderName" viewName="RatesVO1" viewAttr="ProviderName"/>
+                  <oa:messageStyledText id="RMode" dataType="VARCHAR2" prompt="RMode" viewName="RatesVO1" viewAttr="RMode"/>
+                  <oa:messageStyledText id="Currency" dataType="VARCHAR2" prompt="Currency" viewName="RatesVO1" viewAttr="Currency" maximumLength="255"/>
+                  <oa:messageStyledText id="Rate" dataType="VARCHAR2" prompt="Rate" viewName="RatesVO1" viewAttr="Rate" maximumLength="255"/>
+                  <oa:messageStyledText id="Maneuvers" dataType="VARCHAR2" prompt="Maneuvers" viewName="RatesVO1" viewAttr="Maneuvers" maximumLength="255"/>
+                  <oa:messageStyledText id="Reparts" dataType="VARCHAR2" prompt="Reparts" viewName="RatesVO1" viewAttr="Reparts" maximumLength="255"/>
+                  <oa:messageStyledText id="Intersection" dataType="VARCHAR2" prompt="Intersection" viewName="RatesVO1" viewAttr="Intersection" maximumLength="255"/>
+                  <oa:messageStyledText id="DistributionType" dataType="VARCHAR2" prompt="DistributionType" viewName="RatesVO1" viewAttr="DistributionType" maximumLength="255"/>
+                  <oa:messageStyledText id="Classification" dataType="VARCHAR2" prompt="Classification" viewName="RatesVO1" viewAttr="Classification" maximumLength="255"/>
+                  <oa:messageStyledText id="TypeD" dataType="VARCHAR2" prompt="TypeD" viewName="RatesVO1" viewAttr="TypeD" maximumLength="255"/>
+               </ui:contents>
+            </oa:table>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

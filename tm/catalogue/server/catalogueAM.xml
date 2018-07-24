@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+
+<AppModule
+   Name="catalogueAM"
+   ComponentClass="xxgam.oracle.apps.xbol.tm.catalogue.server.catalogueAMImpl" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_deployType" Value="0" />
+   </DesignTime>
+   <ViewUsage
+      Name="OriDestVO1"
+      ViewObjectName="xxgam.oracle.apps.xbol.tm.catalogue.server.OriDestVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="ShippersVO1"
+      ViewObjectName="xxgam.oracle.apps.xbol.tm.catalogue.server.ShippersVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="KilometersVO1"
+      ViewObjectName="xxgam.oracle.apps.xbol.tm.catalogue.server.KilometersVO" >
+   </ViewUsage>
+   <ViewUsage
+      Name="SimplificationVO1"
+      ViewObjectName="xxgam.oracle.apps.xbol.tm.catalogue.server.SimplificationVO" >
+   </ViewUsage>
+</AppModule>

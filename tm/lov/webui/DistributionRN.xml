@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_1312" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/" amDefName="xxgam.oracle.apps.xbol.tm.lov.server.LovAM">
+   <ui:contents>
+      <oa:table name="DistributionRN" id="DistributionVO1">
+         <ui:contents>
+            <oa:messageStyledText id="DistributionId" dataType="NUMBER" prompt="DistributionId" viewName="DistributionVO1" viewAttr="DistributionId" queryable="false" rendered="false"/>
+            <oa:messageStyledText id="Code" dataType="VARCHAR2" prompt="Código" viewName="DistributionVO1" viewAttr="Code" maximumLength="255" queryable="true"/>
+            <oa:messageStyledText id="DName" dataType="VARCHAR2" prompt="Tipo de distribución" viewName="DistributionVO1" viewAttr="DName" maximumLength="255" queryable="true"/>
+            <oa:messageStyledText id="MovementType" dataType="VARCHAR2" prompt="MovementType" viewName="DistributionVO1" viewAttr="MovementType" maximumLength="255"/>
+            <oa:messageStyledText id="Area" dataType="VARCHAR2" prompt="Area" viewName="DistributionVO1" viewAttr="Area" maximumLength="255"/>
+            <oa:messageStyledText id="DateFrom" dataType="DATE" prompt="DateFrom" viewName="DistributionVO1" viewAttr="DateFrom" rendered="false"/>
+            <oa:messageStyledText id="DateTo" dataType="DATE" prompt="DateTo" viewName="DistributionVO1" viewAttr="DateTo" rendered="false"/>
+            <oa:messageStyledText id="Attribute1" dataType="VARCHAR2" prompt="Attribute1" viewName="DistributionVO1" viewAttr="Attribute1" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute2" dataType="VARCHAR2" prompt="Attribute2" viewName="DistributionVO1" viewAttr="Attribute2" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute3" dataType="VARCHAR2" prompt="Attribute3" viewName="DistributionVO1" viewAttr="Attribute3" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute4" dataType="VARCHAR2" prompt="Attribute4" viewName="DistributionVO1" viewAttr="Attribute4" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute5" dataType="VARCHAR2" prompt="Attribute5" viewName="DistributionVO1" viewAttr="Attribute5" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute6" dataType="VARCHAR2" prompt="Attribute6" viewName="DistributionVO1" viewAttr="Attribute6" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute7" dataType="VARCHAR2" prompt="Attribute7" viewName="DistributionVO1" viewAttr="Attribute7" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute8" dataType="VARCHAR2" prompt="Attribute8" viewName="DistributionVO1" viewAttr="Attribute8" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute9" dataType="VARCHAR2" prompt="Attribute9" viewName="DistributionVO1" viewAttr="Attribute9" maximumLength="255" rendered="false"/>
+            <oa:messageStyledText id="Attribute10" dataType="VARCHAR2" prompt="Attribute10" viewName="DistributionVO1" viewAttr="Attribute10" maximumLength="255" rendered="false"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

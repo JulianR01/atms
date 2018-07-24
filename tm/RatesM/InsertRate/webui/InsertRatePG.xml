@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" scope="/" amDefName="xxgam.oracle.apps.xbol.tm.RatesM.InsertRate.server.InsertRateAM" windowTitle="Matriz de tarifas" title="Nuevo registro" controllerClass="xxgam.oracle.apps.xbol.tm.RatesM.InsertRate.webui.InsertRateCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="MainRN">
+               <ui:contents>
+                  <oa:messageLovInput id="Origin" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriginRN" viewName="InsertRateVO1" viewAttr="Origin" prompt="Origen" maximumLength="255" translatableDefaultValue="">
+                     <lovMappings>
+                        <lovMap id="OriginMAP" lovItem="Description" resultTo="Origin" criteriaFrom="Origin"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="Zones" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/ZonesRN" maximumLength="255" viewName="InsertRateVO1" viewAttr="RZone" prompt="Zonas">
+                     <lovMappings>
+                        <lovMap id="ZonesMAP" lovItem="Description" resultTo="Zones" criteriaFrom="Zones"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="Destination" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/DestinationRN" maximumLength="255" viewName="InsertRateVO1" viewAttr="Destination" prompt="Destino">
+                     <lovMappings>
+                        <lovMap id="DestinationMAP" lovItem="Description" resultTo="Destination" criteriaFrom="Destination"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="ProviderNumber" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/PrividersRN" maximumLength="255" viewName="InsertRateVO1" viewAttr="ProviderNumber" prompt="Número de proveedor">
+                     <lovMappings>
+                        <lovMap id="ProviderNMAP2" lovItem="Code" resultTo="ProviderNumber" criteriaFrom="ProviderNumber"/>
+                        <lovMap id="ProviderMAP2" lovItem="Description" resultTo="Provider" criteriaFrom="Provider"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="Provider" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/PrividersRN" maximumLength="255" viewName="InsertRateVO1" viewAttr="ProviderName" prompt="Proveedor">
+                     <lovMappings>
+                        <lovMap id="ProviderMAP1" lovItem="Description" resultTo="Provider" criteriaFrom="Provider"/>
+                        <lovMap id="ProviderNmap1" lovItem="Code" resultTo="ProviderNumber" criteriaFrom="ProviderNumber"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="TransportMode" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/TransportModeRN" maximumLength="255" viewName="InsertRateVO1" viewAttr="RMode" prompt="Modo de transporte">
+                     <lovMappings>
+                        <lovMap id="TransportModeMAP" lovItem="NameMode" resultTo="TransportMode" criteriaFrom="TransportMode"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageChoice id="Currency" queryable="true" viewName="InsertRateVO1" viewAttr="Currency" prompt="Divisa" pickListViewDef="xxgam.oracle.apps.xbol.tm.poplist.server.CurrencyVO" pickListViewName="Currency" pickListDispAttr="Currency" pickListValAttr="Currency"/>
+                  <oa:messageTextInput id="Rate" viewName="InsertRateVO1" viewAttr="Rate" prompt="Tarifa" dataType="NUMBER"/>
+                  <oa:messageTextInput id="Maneuvers" prompt="Maniobras" viewName="InsertRateVO1" viewAttr="Maneuvers" dataType="NUMBER"/>
+                  <oa:messageTextInput id="Reparts" prompt="Repartos" viewName="InsertRateVO1" viewAttr="Reparts" dataType="NUMBER"/>
+                  <oa:messageTextInput id="Cruce" viewName="InsertRateVO1" viewAttr="Intersection" prompt="Cruce (Solo tipo Foráneo)" dataType="VARCHAR2" maximumLength="255"/>
+                  <oa:messageTextInput id="DateFrom" dataType="DATE" viewName="InsertRateVO1" viewAttr="DateFrom" prompt="Fecha inicial" maximumLength="19"/>
+                  <oa:messageTextInput id="DateTo" dataType="DATE" viewName="InsertRateVO1" viewAttr="DateTo" prompt="Fecha final" maximumLength="19"/>
+                  <oa:messageLovInput id="Distribution" viewName="InsertRateVO1" viewAttr="DistributionType" prompt="Distribución" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/DistributionRN">
+                     <lovMappings>
+                        <lovMap id="DistributionMAP" lovItem="DName" resultTo="Distribution" criteriaFrom="Distribution"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageChoice id="HireType" pickListViewDef="xxgam.oracle.apps.xbol.tm.poplist.server.HiretypeVO" pickListViewName="Tipo" pickListDispAttr="Tipo" pickListValAttr="Tipo" viewName="InsertRateVO1" viewAttr="Classification" prompt="Tipo de contratación"/>
+                  <oa:messageChoice id="Type" pickListViewDef="xxgam.oracle.apps.xbol.tm.poplist.server.TypeVO" pickListViewName="PoplistItems" pickListDispAttr="PoplistItems" pickListValAttr="PoplistItems" viewName="InsertRateVO1" viewAttr="TypeD" prompt="Tipo de tarifa" required="no"/>
+                  <oa:messageTextInput id="Flag" prompt="Flag" translatableDefaultValue="Y" dataType="VARCHAR2" viewName="InsertRateVO1" viewAttr="Flag" rendered="false" maximumLength="255"/>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:pageButtonBar id="ConfirmationRN">
+               <ui:contents>
+                  <oa:submitButton id="Ok" text="Guardar" prompt="Guardar" disabled="false"/>
+                  <oa:submitButton id="New" text="Nuevo registro" prompt="Nuevo registro"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

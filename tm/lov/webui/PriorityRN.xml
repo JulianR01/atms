@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_1312" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/" amDefName="xxgam.oracle.apps.xbol.tm.lov.server.LovAM">
+   <ui:contents>
+      <oa:table name="PriorityRN" id="PriorityVO1">
+         <ui:contents>
+            <oa:messageStyledText id="PriorityId" dataType="NUMBER" prompt="PriorityId" viewName="PriorityVO1" viewAttr="PriorityId" queryable="false" sortState="no" rendered="false"/>
+            <oa:messageStyledText id="MaterialId" dataType="NUMBER" prompt="MaterialId" viewName="PriorityVO1" viewAttr="MaterialId" queryable="true"/>
+            <oa:messageStyledText id="Code" dataType="VARCHAR2" prompt="Código" viewName="PriorityVO1" viewAttr="Code" maximumLength="255" queryable="true"/>
+            <oa:messageStyledText id="Priority" dataType="VARCHAR2" prompt="Prioridad" viewName="PriorityVO1" viewAttr="Priority" maximumLength="255"/>
+            <oa:messageStyledText id="AtentionHours" dataType="VARCHAR2" prompt="AtentionHours" viewName="PriorityVO1" viewAttr="AtentionHours" maximumLength="255"/>
+            <oa:messageStyledText id="DateFrom" dataType="DATE" prompt="DateFrom" viewName="PriorityVO1" viewAttr="DateFrom" rendered="false"/>
+            <oa:messageStyledText id="DateTo" dataType="DATE" prompt="DateTo" viewName="PriorityVO1" viewAttr="DateTo" rendered="false"/>
+            <oa:messageStyledText id="Attribute1" dataType="VARCHAR2" prompt="Attribute1" viewName="PriorityVO1" viewAttr="Attribute1" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute2" dataType="VARCHAR2" prompt="Attribute2" viewName="PriorityVO1" viewAttr="Attribute2" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute3" dataType="VARCHAR2" prompt="Attribute3" viewName="PriorityVO1" viewAttr="Attribute3" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute4" dataType="VARCHAR2" prompt="Attribute4" viewName="PriorityVO1" viewAttr="Attribute4" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute5" dataType="VARCHAR2" prompt="Attribute5" viewName="PriorityVO1" viewAttr="Attribute5" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute6" dataType="VARCHAR2" prompt="Attribute6" viewName="PriorityVO1" viewAttr="Attribute6" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute7" dataType="VARCHAR2" prompt="Attribute7" viewName="PriorityVO1" viewAttr="Attribute7" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute8" dataType="VARCHAR2" prompt="Attribute8" viewName="PriorityVO1" viewAttr="Attribute8" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute9" dataType="VARCHAR2" prompt="Attribute9" viewName="PriorityVO1" viewAttr="Attribute9" maximumLength="255"/>
+            <oa:messageStyledText id="Attribute10" dataType="VARCHAR2" prompt="Attribute10" viewName="PriorityVO1" viewAttr="Attribute10" maximumLength="255"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

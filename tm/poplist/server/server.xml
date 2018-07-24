@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="xxgam.oracle.apps.xbol.tm.poplist.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+   </DesignTime>
+   <Containee
+      Name="CurrencyVO"
+      FullName="xxgam.oracle.apps.xbol.tm.poplist.server.CurrencyVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="HiretypeVO"
+      FullName="xxgam.oracle.apps.xbol.tm.poplist.server.HiretypeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="PoplistAM"
+      FullName="xxgam.oracle.apps.xbol.tm.poplist.server.PoplistAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="TypeVO"
+      FullName="xxgam.oracle.apps.xbol.tm.poplist.server.TypeVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

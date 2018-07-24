@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" amDefName="xxgam.oracle.apps.xbol.tm.catalogue.server.catalogueAM" windowTitle="Catálogo de simplificación" title="Catálogo de simplificación" controllerClass="xxgam.oracle.apps.xbol.tm.catalogue.webui.SimplificationCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="MainRN">
+               <ui:contents>
+                  <oa:messageLovInput id="OriDestFilter" prompt="Origen / Destino" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG">
+                     <lovMappings>
+                        <lovMap id="OriDestFMap" lovItem="Description" resultTo="OriDestFilter" criteriaFrom="OriDestFilter"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:spacer id="item1" height="10"/>
+            <oa:table id="Simplification" width="100%">
+               <ui:contents>
+                  <oa:messageTextInput id="SimpId" dataType="NUMBER" prompt="SimpId" viewName="SimplificationVO1" viewAttr="SimpId" rendered="false"/>
+                  <oa:messageLovInput id="CodeOridest" dataType="VARCHAR2" prompt="Código de Origen / Destino" viewName="SimplificationVO1" viewAttr="CodeOridest" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" readOnly="${oa.SimplificationVO1.IsRecordEnabled}">
+                     <lovMappings>
+                        <lovMap id="codeODMap1" lovItem="Code" resultTo="CodeOridest" criteriaFrom="CodeOridest"/>
+                        <lovMap id="ODMap1" lovItem="Description" resultTo="DOridest" criteriaFrom="DOridest"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="DOridest" dataType="VARCHAR2" prompt="Origen/Destino" viewName="SimplificationVO1" viewAttr="DOridest" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" readOnly="${oa.SimplificationVO1.IsRecordEnabled}">
+                     <lovMappings>
+                        <lovMap id="codeODMap2" lovItem="Code" resultTo="CodeOridest" criteriaFrom="CodeOridest"/>
+                        <lovMap id="ODMap2" lovItem="Description" resultTo="DOridest" criteriaFrom="DOridest"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageTextInput id="Code" dataType="VARCHAR2" prompt="Código" viewName="SimplificationVO1" viewAttr="Code" maximumLength="255" readOnly="${oa.SimplificationVO1.IsRecordEnabled}"/>
+                  <oa:messageTextInput id="Description" dataType="VARCHAR2" prompt="Descripción" viewName="SimplificationVO1" viewAttr="Description" maximumLength="255" readOnly="${oa.SimplificationVO1.IsRecordEnabled}"/>
+                  <oa:messageTextInput id="LoadDate" dataType="DATE" prompt="Fecha de carga o última actualización" viewName="SimplificationVO1" viewAttr="LoadDate" readOnly="${oa.SimplificationVO1.IsRecordEnabled}"/>
+                  <oa:image id="UpdateAction" prompt="ACTUALIZAR" source="updateicon_enabled.gif" rendered="${oa.SimplificationVO1.IsRecordEnabled2}" imageHeight="24">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="updateEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+                  <oa:image id="DeleteAction" rendered="${oa.SimplificationVO1.IsRecordEnabled2}" source="deleteicon_enabled.gif" prompt="ELIMINAR" shortDesc="Eliminar registro" imageHeight="24">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="deleteEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+               </ui:contents>
+            </oa:table>
+            <oa:pageButtonBar id="region2">
+               <ui:contents>
+                  <oa:submitButton id="go" rendered="${oa.SimplificationVO1.IsRecordEnabled3}" text="Filtrar" prompt="Filtrar"/>
+                  <oa:submitButton id="new" rendered="${oa.SimplificationVO1.IsRecordEnabled3}" text="Nuevo registro" prompt="Nuevo registro"/>
+                  <oa:submitButton id="save" rendered="${oa.SimplificationVO1.IsRecordEnabled4}" text="Guardar" prompt="Guardar"/>
+                  <oa:submitButton id="cancel" text="Cancelar" prompt="Cancelar" rendered="${oa.SimplificationVO1.IsRecordEnabled4}"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

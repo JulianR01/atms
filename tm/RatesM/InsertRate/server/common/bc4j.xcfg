@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="InsertRateAMLocal">
+         <AppModuleJndiName>xxgam.oracle.apps.xbol.tm.RatesM.InsertRate.server.InsertRateAM</AppModuleJndiName>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <ApplicationName>xxgam.oracle.apps.xbol.tm.RatesM.InsertRate.server.InsertRateAM</ApplicationName>
+         <jbo.project>TransportationManagement</jbo.project>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="xxgam.oracle.apps.xbol.tm.catalogue.schema.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+   </DesignTime>
+   <Containee
+      Name="KilometersEO"
+      FullName="xxgam.oracle.apps.xbol.tm.catalogue.schema.server.KilometersEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="OriDestEO"
+      FullName="xxgam.oracle.apps.xbol.tm.catalogue.schema.server.OriDestEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="ShippersEO"
+      FullName="xxgam.oracle.apps.xbol.tm.catalogue.schema.server.ShippersEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="SimplificationEO"
+      FullName="xxgam.oracle.apps.xbol.tm.catalogue.schema.server.SimplificationEO"
+      ObjectType="Entity" >
+   </Containee>
+</JboPackage>

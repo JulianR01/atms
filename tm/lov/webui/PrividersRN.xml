@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oa:listOfValues version="10.1.3_1312" xml:lang="en-US" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:ui="http://xmlns.oracle.com/uix/ui" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$" scope="/" amDefName="xxgam.oracle.apps.xbol.tm.lov.server.LovAM">
+   <ui:contents>
+      <oa:table name="PrividersRN" id="ProvidersVO1">
+         <ui:contents>
+            <oa:messageStyledText id="ProviderId" dataType="NUMBER" prompt="ProviderId" viewName="ProvidersVO1" viewAttr="ProviderId" queryable="false" rendered="false"/>
+            <oa:messageStyledText id="Code" dataType="VARCHAR2" prompt="Código" viewName="ProvidersVO1" viewAttr="Code" maximumLength="255" queryable="true"/>
+            <oa:messageStyledText id="Description" dataType="VARCHAR2" prompt="Descripción" viewName="ProvidersVO1" viewAttr="Description" maximumLength="1000" queryable="true"/>
+            <oa:messageStyledText id="DateFrom" dataType="DATE" prompt="DateFrom" viewName="ProvidersVO1" viewAttr="DateFrom" queryable="false" rendered="false"/>
+            <oa:messageStyledText id="DateTo" dataType="DATE" prompt="DateTo" viewName="ProvidersVO1" viewAttr="DateTo" queryable="false" rendered="false"/>
+         </ui:contents>
+      </oa:table>
+   </ui:contents>
+</oa:listOfValues>

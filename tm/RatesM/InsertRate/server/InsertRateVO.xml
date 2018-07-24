@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="InsertRateVO"
+   SelectList="InsertRateEO.ATTRIBUTE1, 
+       InsertRateEO.ATTRIBUTE10, 
+       InsertRateEO.ATTRIBUTE2, 
+       InsertRateEO.ATTRIBUTE3, 
+       InsertRateEO.ATTRIBUTE4, 
+       InsertRateEO.ATTRIBUTE5, 
+       InsertRateEO.ATTRIBUTE6, 
+       InsertRateEO.ATTRIBUTE7, 
+       InsertRateEO.ATTRIBUTE8, 
+       InsertRateEO.ATTRIBUTE9, 
+       InsertRateEO.CLASSIFICATION, 
+       InsertRateEO.CREATED_BY, 
+       InsertRateEO.CREATION_DATE, 
+       InsertRateEO.CURRENCY, 
+       InsertRateEO.DATE_FROM, 
+       InsertRateEO.DATE_TO, 
+       InsertRateEO.DESTINATION, 
+       InsertRateEO.DISTRIBUTION_TYPE, 
+       InsertRateEO.FLAG, 
+       InsertRateEO.ID_TARIFA, 
+       InsertRateEO.INTERSECTION, 
+       InsertRateEO.LAST_UPDATED_BY, 
+       InsertRateEO.LAST_UPDATE_DATE, 
+       InsertRateEO.LAST_UPDATE_LOGIN, 
+       InsertRateEO.MANEUVERS, 
+       InsertRateEO.ORIGIN, 
+       InsertRateEO.PROVIDER_NAME, 
+       InsertRateEO.PROVIDER_NUMBER, 
+       InsertRateEO.RATE, 
+       InsertRateEO.REPARTS, 
+       InsertRateEO.ROWID, 
+       InsertRateEO.R_MODE, 
+       InsertRateEO.R_ZONE, 
+       InsertRateEO.TYPE_D, 
+       InsertRateEO.TYPE_V"
+   FromList="XXGAM_TM_RATES InsertRateEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="xxgam.oracle.apps.xbol.tm.RatesM.InsertRate.server.InsertRateVORowImpl"
+   ComponentClass="oracle.apps.fnd.framework.server.OAViewObjectImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+      <Attr Name="_codeGenFlag2" Value="Access|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="InsertRateEO"
+      Entity="xxgam.oracle.apps.xbol.tm.RatesM.InsertRate.schema.server.InsertRateEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="Attribute1"
+      EntityAttrName="Attribute1"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE1" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute10"
+      EntityAttrName="Attribute10"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE10" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute2"
+      EntityAttrName="Attribute2"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE2" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute3"
+      EntityAttrName="Attribute3"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE3" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute4"
+      EntityAttrName="Attribute4"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE4" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute5"
+      EntityAttrName="Attribute5"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE5" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute6"
+      EntityAttrName="Attribute6"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE6" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute7"
+      EntityAttrName="Attribute7"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE7" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute8"
+      EntityAttrName="Attribute8"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE8" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute9"
+      EntityAttrName="Attribute9"
+      EntityUsage="InsertRateEO"
+      AliasName="ATTRIBUTE9" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Classification"
+      EntityAttrName="Classification"
+      EntityUsage="InsertRateEO"
+      AliasName="CLASSIFICATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="InsertRateEO"
+      AliasName="CREATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="InsertRateEO"
+      AliasName="CREATION_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Currency"
+      EntityAttrName="Currency"
+      EntityUsage="InsertRateEO"
+      AliasName="CURRENCY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DateFrom"
+      EntityAttrName="DateFrom"
+      EntityUsage="InsertRateEO"
+      AliasName="DATE_FROM" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DateTo"
+      EntityAttrName="DateTo"
+      EntityUsage="InsertRateEO"
+      AliasName="DATE_TO" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Destination"
+      EntityAttrName="Destination"
+      EntityUsage="InsertRateEO"
+      AliasName="DESTINATION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DistributionType"
+      EntityAttrName="DistributionType"
+      EntityUsage="InsertRateEO"
+      AliasName="DISTRIBUTION_TYPE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Flag"
+      EntityAttrName="Flag"
+      EntityUsage="InsertRateEO"
+      AliasName="FLAG" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdTarifa"
+      IsNotNull="true"
+      EntityAttrName="IdTarifa"
+      EntityUsage="InsertRateEO"
+      AliasName="ID_TARIFA" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Intersection"
+      EntityAttrName="Intersection"
+      EntityUsage="InsertRateEO"
+      AliasName="INTERSECTION" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="InsertRateEO"
+      AliasName="LAST_UPDATED_BY" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="InsertRateEO"
+      AliasName="LAST_UPDATE_DATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="InsertRateEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Maneuvers"
+      EntityAttrName="Maneuvers"
+      EntityUsage="InsertRateEO"
+      AliasName="MANEUVERS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Origin"
+      EntityAttrName="Origin"
+      EntityUsage="InsertRateEO"
+      AliasName="ORIGIN" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ProviderName"
+      EntityAttrName="ProviderName"
+      EntityUsage="InsertRateEO"
+      AliasName="PROVIDER_NAME" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="ProviderNumber"
+      EntityAttrName="ProviderNumber"
+      EntityUsage="InsertRateEO"
+      AliasName="PROVIDER_NUMBER" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Rate"
+      EntityAttrName="Rate"
+      EntityUsage="InsertRateEO"
+      AliasName="RATE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Reparts"
+      EntityAttrName="Reparts"
+      EntityUsage="InsertRateEO"
+      AliasName="REPARTS" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RowID"
+      IsUpdateable="false"
+      EntityAttrName="RowID"
+      EntityUsage="InsertRateEO"
+      AliasName="ROWID" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RMode"
+      EntityAttrName="RMode"
+      EntityUsage="InsertRateEO"
+      AliasName="R_MODE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="RZone"
+      EntityAttrName="RZone"
+      EntityUsage="InsertRateEO"
+      AliasName="R_ZONE" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TypeD"
+      EntityAttrName="TypeD"
+      EntityUsage="InsertRateEO"
+      AliasName="TYPE_D" >
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TypeV"
+      EntityAttrName="TypeV"
+      EntityUsage="InsertRateEO"
+      AliasName="TYPE_V" >
+   </ViewAttribute>
+</ViewObject>

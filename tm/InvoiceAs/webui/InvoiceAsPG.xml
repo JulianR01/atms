@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" scope="/" amDefName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.InvoiceAsAM" windowTitle="Asociación de facturas" title="Asociación de facturas" controllerClass="xxgam.oracle.apps.xbol.tm.InvoiceAs.webui.InvoiceAsCO">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="SearchRN">
+               <ui:contents>
+                  <oa:messageLovInput id="ProviderN" prompt="Número de proveedor" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/PrividersRN">
+                     <lovMappings>
+                        <lovMap id="ProviderN1MAP" lovItem="Code" resultTo="ProviderN" criteriaFrom="ProviderN"/>
+                        <lovMap id="Provider1MAP" lovItem="Description" resultTo="Provider" criteriaFrom="Provider"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="Provider" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/PrividersRN" prompt="Proveedor">
+                     <lovMappings>
+                        <lovMap id="ProviderN2MAP" lovItem="Code" resultTo="ProviderN" criteriaFrom="ProviderN"/>
+                        <lovMap id="Provider2MAP" lovItem="Description" resultTo="Provider" criteriaFrom="Provider"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageChoice id="currency" pickListValAttr="Currency" prompt="Moneda" queryable="true" pickListViewDef="xxgam.oracle.apps.xbol.tm.poplist.server.CurrencyVO" pickListViewName="Currency" pickListDispAttr="Currency"/>
+                  <oa:messageTextInput id="dateini" dataType="DATE" prompt="Fecha inicial"/>
+                  <oa:messageTextInput id="datefin" dataType="DATE" prompt="Fecha final"/>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:spacer id="item1" height="5"/>
+            <oa:cellFormat id="InvoiceRN" hAlign="left">
+               <ui:contents>
+                  <oa:messageTextInput id="Invoice" prompt="Factura"/>
+               </ui:contents>
+            </oa:cellFormat>
+            <oa:spacer id="spacerIT" height="5"/>
+            <oa:pageButtonBar id="region2">
+               <ui:contents>
+                  <oa:submitButton id="Go" text="Buscar" prompt="Buscar"/>
+                  <oa:submitButton id="Conciliar" text="Conciliar" prompt="Conciliar"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+            <oa:advancedTable id="MasterTable" viewName="MasterFreightVO1" detailViewAttr="DetailFlag" viewLinkName="MasterExtraVL1" width="100%" text="Master detail Factura" childViewAttrName="IdFreightChar">
+               <ui:contents>
+                  <oa:column id="fleteC" userCustomizable="true">
+                     <ui:columnHeader>
+                        <oa:sortableHeader id="sortableHeader1" prompt="Flete"/>
+                     </ui:columnHeader>
+                     <ui:contents>
+                        <oa:messageStyledText id="Flete" viewAttr="IdFreightChar" prompt="Flete" maximumLength="200"/>
+                     </ui:contents>
+                  </oa:column>
+                  <oa:column id="transportModeC">
+                     <ui:columnHeader>
+                        <oa:sortableHeader id="sortableHeader2" prompt="Modo de transporte"/>
+                     </ui:columnHeader>
+                     <ui:contents>
+                        <oa:messageStyledText id="transportMode" viewAttr="ModeDesc" prompt="Modo de transporte"/>
+                     </ui:contents>
+                  </oa:column>
+                  <oa:column id="idFolioC">
+                     <ui:columnHeader>
+                        <oa:sortableHeader id="sortableHeader3" prompt="Folio"/>
+                     </ui:columnHeader>
+                     <ui:contents>
+                        <oa:messageStyledText id="idFolio" viewAttr="IdFolio"/>
+                     </ui:contents>
+                  </oa:column>
+                  <oa:column id="tramoC">
+                     <ui:columnHeader>
+                        <oa:sortableHeader id="sortableHeader4" prompt="Tramo"/>
+                     </ui:columnHeader>
+                     <ui:contents>
+                        <oa:messageStyledText id="tramo" viewAttr="IdStretch"/>
+                     </ui:contents>
+                  </oa:column>
+                  <oa:column id="InvoiceStatusC">
+                     <ui:columnHeader>
+                        <oa:sortableHeader id="sortableHeader8" prompt="Estatus"/>
+                     </ui:columnHeader>
+                     <ui:contents>
+                        <oa:messageStyledText id="invoiceStatus" viewAttr="InvoiceStatus"/>
+                     </ui:contents>
+                  </oa:column>
+               </ui:contents>
+               <ui:detail>
+                  <oa:header id="DetalExtra" text="Detalle de costos adicionales" rendered="true">
+                     <ui:contents>
+                        <oa:advancedTable id="DetailTableRN" viewLinkName="MasterExtraVL1" width="100%" viewName="ExtraCostVO2">
+                           <ui:contents>
+                              <oa:column id="extraCostC">
+                                 <ui:columnHeader>
+                                    <oa:sortableHeader id="sortableHeader5" prompt="Costo adicional"/>
+                                 </ui:columnHeader>
+                                 <ui:contents>
+                                    <oa:messageStyledText id="extraCost" viewName="ExtraCostVO2" viewAttr="TypeExtraCost" prompt=""/>
+                                 </ui:contents>
+                              </oa:column>
+                              <oa:column id="RateC">
+                                 <ui:columnHeader>
+                                    <oa:sortableHeader id="sortableHeader6" prompt="Tasa"/>
+                                 </ui:columnHeader>
+                                 <ui:contents>
+                                    <oa:messageStyledText id="Rate" viewName="ExtraCostVO2" viewAttr="Rate"/>
+                                 </ui:contents>
+                              </oa:column>
+                              <oa:column id="column1">
+                                 <ui:columnHeader>
+                                    <oa:sortableHeader id="sortableHeader7" prompt="Tasa de impuesto"/>
+                                 </ui:columnHeader>
+                                 <ui:contents>
+                                    <oa:messageStyledText id="taxRate" viewName="ExtraCostVO2" viewAttr="TaxRate"/>
+                                 </ui:contents>
+                              </oa:column>
+                           </ui:contents>
+                        </oa:advancedTable>
+                     </ui:contents>
+                  </oa:header>
+               </ui:detail>
+               <ui:tableSelection>
+                  <oa:multipleSelection id="multipleSelection1" viewAttr="CheckBox" rendered="${oa.MasterFreightVO1.flagCon}"/>
+               </ui:tableSelection>
+            </oa:advancedTable>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

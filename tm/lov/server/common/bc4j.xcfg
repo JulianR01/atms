@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="LovAMLocal">
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <jbo.project>Transportation</jbo.project>
+         <AppModuleJndiName>xxgam.oracle.apps.xbol.tm.lov.server.LovAM</AppModuleJndiName>
+         <java.naming.factory.initial>oracle.jbo.common.JboInitialContextFactory</java.naming.factory.initial>
+         <ApplicationName>xxgam.oracle.apps.xbol.tm.lov.server.LovAM</ApplicationName>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

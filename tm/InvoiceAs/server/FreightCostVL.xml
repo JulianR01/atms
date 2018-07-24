@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewLink SYSTEM "jbo_03_01.dtd">
+
+<ViewLink
+   Name="FreightCostVL" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+   </DesignTime>
+   <ViewLinkDefEnd
+      Name="CostVO"
+      Cardinality="1"
+      Owner="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.MasterFreightVO"
+      Source="true" >
+      <AttrArray Name="Attributes">
+         <Item Value="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.MasterFreightVO.IdFreightChar" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+   <ViewLinkDefEnd
+      Name="MasterFreightVO"
+      Cardinality="-1"
+      Owner="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.CostVO" >
+      <AttrArray Name="Attributes">
+         <Item Value="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.CostVO.IdFreightChar" />
+      </AttrArray>
+      <DesignTime>
+         <Attr Name="_isUpdateable" Value="true" />
+      </DesignTime>
+   </ViewLinkDefEnd>
+</ViewLink>

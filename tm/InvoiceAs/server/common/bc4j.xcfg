@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig>
+   <AppModuleConfigBag>
+      <AppModuleConfig name="InvoiceAsAMLocal">
+         <AppModuleJndiName>xxgam.oracle.apps.xbol.tm.InvoiceAs.server.InvoiceAsAM</AppModuleJndiName>
+         <DeployPlatform>LOCAL</DeployPlatform>
+         <JDBCName>DAEMXI</JDBCName>
+         <ApplicationName>xxgam.oracle.apps.xbol.tm.InvoiceAs.server.InvoiceAsAM</ApplicationName>
+         <jbo.project>TransportationManagement</jbo.project>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <ConnectionDefinition name="DAEMXI">
+      <ENTRY name="JDBC_PORT" value="10710"/>
+      <ENTRY name="ConnectionType" value="JDBC"/>
+      <ENTRY name="HOSTNAME" value="vmohsaemx001.oracleoutsourcing.com  "/>
+      <ENTRY name="user" value="apps"/>
+      <ENTRY name="ConnectionName" value="DAEMXI"/>
+      <ENTRY name="SID" value="DAEMXI"/>
+      <ENTRY name="JdbcDriver" value="oracle.jdbc.OracleDriver"/>
+      <ENTRY name="password">
+         <![CDATA[{904}05A48E01E7DF7B9BEA921C004903FE5AEE0E9B2A8F443868D3]]>
+      </ENTRY>
+      <ENTRY name="ORACLE_JDBC_TYPE" value="thin"/>
+      <ENTRY name="DeployPassword" value="true"/>
+   </ConnectionDefinition>
+</BC4JConfig>

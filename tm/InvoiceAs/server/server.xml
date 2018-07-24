@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE JboPackage SYSTEM "jbo_03_01.dtd">
+
+<JboPackage
+   Name="server"
+   SeparateXMLFiles="true"
+   PackageName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server" >
+   <DesignTime>
+      <Attr Name="_ejbPackage" Value="false" />
+      <Attr Name="_version" Value="10.1.3.41.57" />
+   </DesignTime>
+   <Containee
+      Name="CostVO"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.CostVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="ExtraCostVO"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.ExtraCostVO"
+      ObjectType="ViewObject" >
+   </Containee>
+   <Containee
+      Name="FreightCostVL"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.FreightCostVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="InvoiceAsAM"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.InvoiceAsAM"
+      ObjectType="AppModule" >
+   </Containee>
+   <Containee
+      Name="MasterExtraVL"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.MasterExtraVL"
+      ObjectType="ViewLink" >
+   </Containee>
+   <Containee
+      Name="MasterFreightEO"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.MasterFreightEO"
+      ObjectType="Entity" >
+   </Containee>
+   <Containee
+      Name="MasterFreightVO"
+      FullName="xxgam.oracle.apps.xbol.tm.InvoiceAs.server.MasterFreightVO"
+      ObjectType="ViewObject" >
+   </Containee>
+</JboPackage>

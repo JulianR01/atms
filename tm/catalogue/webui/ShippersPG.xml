@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="SPageLayoutRN" windowTitle="Catálogo de embarcadores y destinatarios" title="Catálogo de embarcadores y destinatarios" controllerClass="xxgam.oracle.apps.xbol.tm.catalogue.webui.ShippersCO" amDefName="xxgam.oracle.apps.xbol.tm.catalogue.server.catalogueAM">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="FilterRN">
+               <ui:contents>
+                  <oa:messageTextInput id="codeIT" prompt="Código"/>
+                  <oa:messageTextInput id="ShipperIT" prompt="Embarcador"/>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:spacer id="item1" height="10"/>
+            <oa:table id="ShippersTbl" width="100%">
+               <ui:contents>
+                  <oa:messageTextInput id="ShipperId" dataType="NUMBER" prompt="ShipperId" viewName="ShippersVO1" viewAttr="ShipperId" rendered="false"/>
+                  <oa:messageTextInput id="Code" dataType="VARCHAR2" prompt="Código" viewName="ShippersVO1" viewAttr="Code" maximumLength="255" readOnly="${oa.ShippersVO1.IsRecordEnabled}"/>
+                  <oa:messageTextInput id="Shipper" dataType="VARCHAR2" prompt="Embarcador" viewName="ShippersVO1" viewAttr="Shipper" maximumLength="255" readOnly="${oa.ShippersVO1.IsRecordEnabled}"/>
+                  <oa:messageTextInput id="Address" dataType="VARCHAR2" prompt="Dirección" viewName="ShippersVO1" viewAttr="Address" maximumLength="255" readOnly="${oa.ShippersVO1.IsRecordEnabled}"/>
+                  <oa:messageTextInput id="LoadDate" dataType="DATE" prompt="Fecha de alta o actualización" viewName="ShippersVO1" viewAttr="LoadDate" readOnly="${oa.ShippersVO1.IsRecordEnabled}"/>
+                  <oa:image id="UpdateAction" prompt="ACTUALIZAR" source="updateicon_enabled.gif" shortDesc="Actualizar registro" rendered="${oa.ShippersVO1.IsRecordEnabled2}" imageHeight="24">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="updateEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+                  <oa:image id="DeleteAction" source="deleteicon_enabled.gif" prompt="ELIMINAR" rendered="${oa.ShippersVO1.IsRecordEnabled2}" shortDesc="Eliminar registro" imageHeight="24">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="deleteEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+               </ui:contents>
+            </oa:table>
+            <oa:pageButtonBar id="bttnBar">
+               <ui:contents>
+                  <oa:submitButton id="go" text="Filtrar" prompt="Filtrar" rendered="${oa.ShippersVO1.IsRecordEnabled3}"/>
+                  <oa:submitButton id="new" text="Nuevo Registro" prompt="Nuevo Registro" rendered="${oa.ShippersVO1.IsRecordEnabled3}"/>
+                  <oa:submitButton id="save" text="Guardar" prompt="Guardar" rendered="${oa.ShippersVO1.IsRecordEnabled4}"/>
+                  <oa:submitButton id="cancel" text="Cancelar" prompt="Cancelar" rendered="${oa.ShippersVO1.IsRecordEnabled4}"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

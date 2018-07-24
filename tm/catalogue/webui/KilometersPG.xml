@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<page xmlns:jrad="http://xmlns.oracle.com/jrad" xmlns:oa="http://xmlns.oracle.com/oa" xmlns:ui="http://xmlns.oracle.com/uix/ui" version="10.1.3_1312" xml:lang="en-US" xmlns:user="http://xmlns.oracle.com/jrad/user" xmlns="http://xmlns.oracle.com/jrad" file-version="$Header$">
+   <content>
+      <oa:pageLayout id="PageLayoutRN" controllerClass="xxgam.oracle.apps.xbol.tm.catalogue.webui.KilometersCO" amDefName="xxgam.oracle.apps.xbol.tm.catalogue.server.catalogueAM" windowTitle="Catálogo de kilometraje" title="Catálogo de kilometraje">
+         <ui:corporateBranding>
+            <oa:image id="corporateBrandingImage" source="/OA_MEDIA/FNDSSCORP.gif"/>
+         </ui:corporateBranding>
+         <ui:contents>
+            <oa:messageComponentLayout id="FilterRN">
+               <ui:contents>
+                  <oa:messageLovInput id="OriginFilter" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" prompt="Origen">
+                     <lovMappings>
+                        <lovMap id="OriFilterMap" lovItem="Description" resultTo="OriginFilter" criteriaFrom="OriginFilter"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="DestFilter" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" prompt="Destino">
+                     <lovMappings>
+                        <lovMap id="destFilterMap" lovItem="Description" resultTo="DestFilter" criteriaFrom="DestFilter"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+               </ui:contents>
+            </oa:messageComponentLayout>
+            <oa:spacer id="item5" height="10"/>
+            <oa:table id="Kilometers" width="100%">
+               <ui:contents>
+                  <oa:messageTextInput id="KmId" dataType="NUMBER" prompt="KmId" viewName="KilometersVO1" viewAttr="KmId" readOnly="${oa.KilometersVO1.IsRecordEnabled}" rendered="false"/>
+                  <oa:messageLovInput id="CodeOrigin" dataType="VARCHAR2" prompt="Código de Origen" viewName="KilometersVO1" viewAttr="CodeOrigin" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" readOnly="${oa.KilometersVO1.IsRecordEnabled}">
+                     <lovMappings>
+                        <lovMap id="CodeOriMap1" lovItem="Code" resultTo="CodeOrigin" criteriaFrom="CodeOrigin"/>
+                        <lovMap id="OriMap1" lovItem="Description" resultTo="DOrigin" criteriaFrom="DOrigin"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="DOrigin" dataType="VARCHAR2" prompt="Origen" viewName="KilometersVO1" viewAttr="DOrigin" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" readOnly="${oa.KilometersVO1.IsRecordEnabled}">
+                     <lovMappings>
+                        <lovMap id="CodeOriMap2" lovItem="Code" resultTo="CodeOrigin" criteriaFrom="CodeOrigin"/>
+                        <lovMap id="OriMap2" lovItem="Description" resultTo="DOrigin" criteriaFrom="DOrigin"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="CodeDestination" dataType="VARCHAR2" prompt="Código de destino" viewName="KilometersVO1" viewAttr="CodeDestination" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" readOnly="${oa.KilometersVO1.IsRecordEnabled}">
+                     <lovMappings>
+                        <lovMap id="CodeDestMap1" lovItem="Code" resultTo="CodeDestination" criteriaFrom="CodeDestination"/>
+                        <lovMap id="DestMap1" lovItem="Description" resultTo="DDestination" criteriaFrom="DDestination"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageLovInput id="DDestination" dataType="VARCHAR2" prompt="Destino" viewName="KilometersVO1" viewAttr="DDestination" maximumLength="255" externalListOfValues="/xxgam/oracle/apps/xbol/tm/lov/webui/OriDestRG" readOnly="${oa.KilometersVO1.IsRecordEnabled}">
+                     <lovMappings>
+                        <lovMap id="CodeDestMap2" lovItem="Code" resultTo="CodeDestination" criteriaFrom="CodeDestination"/>
+                        <lovMap id="DestMap2" lovItem="Description" resultTo="DDestination" criteriaFrom="DDestination"/>
+                     </lovMappings>
+                  </oa:messageLovInput>
+                  <oa:messageTextInput id="Km" dataType="NUMBER" prompt="Kilómetros" viewName="KilometersVO1" viewAttr="Km" readOnly="${oa.KilometersVO1.IsRecordEnabled}"/>
+                  <oa:messageTextInput id="LoadDate" dataType="DATE" prompt="Fecha de carga o última actualización" viewName="KilometersVO1" viewAttr="LoadDate" readOnly="${oa.KilometersVO1.IsRecordEnabled}"/>
+                  <oa:image id="UpdateAction" prompt="ACTUALIZAR" source="updateicon_enabled.gif" shortDesc="Actualizar registro." rendered="${oa.KilometersVO1.IsRecordEnabled2}" imageHeight="24">
+                     <ui:primaryClientAction>
+                        <ui:fireAction/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+                  <oa:image id="DeleteAction" rendered="${oa.KilometersVO1.IsRecordEnabled2}" imageHeight="24" prompt="ELIMINAR" source="deleteicon_enabled.gif" shortDesc="Eliminar registro">
+                     <ui:primaryClientAction>
+                        <ui:fireAction event="deleteEvent"/>
+                     </ui:primaryClientAction>
+                  </oa:image>
+               </ui:contents>
+            </oa:table>
+            <oa:pageButtonBar id="ButtonBar">
+               <ui:contents>
+                  <oa:submitButton id="go" rendered="${oa.KilometersVO1.IsRecordEnabled3}" text="Filtrar" prompt="Filtrar"/>
+                  <oa:submitButton id="new" rendered="${oa.KilometersVO1.IsRecordEnabled3}" text="Nuevo registro" prompt="Nuevo registro"/>
+                  <oa:submitButton id="save" rendered="${oa.KilometersVO1.IsRecordEnabled4}" text="Guardar" prompt="Guardar"/>
+                  <oa:submitButton id="cancel" rendered="${oa.KilometersVO1.IsRecordEnabled4}" text="Cancelar" prompt="Cancelar"/>
+               </ui:contents>
+            </oa:pageButtonBar>
+         </ui:contents>
+      </oa:pageLayout>
+   </content>
+</page>

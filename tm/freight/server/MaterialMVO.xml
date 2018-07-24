@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<!DOCTYPE ViewObject SYSTEM "jbo_03_01.dtd">
+
+<ViewObject
+   Name="MaterialMVO"
+   SelectList="MaterialMEO.ID_REQUEST, 
+       MaterialMEO.ID_MATERIAL, 
+       MaterialMEO.ID_MATERIAL_TYPE, 
+       MaterialMEO.MATERIAL_TYPE, 
+       MaterialMEO.MATERIAL_DATE, 
+       MaterialMEO.MATERIAL_TIME, 
+       MaterialMEO.DISTRIBUTION, 
+       MaterialMEO.ID_LOAD_TYPE, 
+       MaterialMEO.LOAD_TYPE, 
+       MaterialMEO.ID_DGR, 
+       MaterialMEO.DGR, 
+       MaterialMEO.ID_DOCUMENT, 
+       MaterialMEO.DOCUMENT_DESCRIPTION, 
+       MaterialMEO.N_REFERENCE, 
+       MaterialMEO.SHIPMENT, 
+       MaterialMEO.ATTRIBUTE1, 
+       MaterialMEO.ATTRIBUTE2, 
+       MaterialMEO.ATTRIBUTE3, 
+       MaterialMEO.ATTRIBUTE4, 
+       MaterialMEO.ATTRIBUTE5, 
+       MaterialMEO.ATTRIBUTE6, 
+       MaterialMEO.ATTRIBUTE7, 
+       MaterialMEO.ATTRIBUTE8, 
+       MaterialMEO.ATTRIBUTE9, 
+       MaterialMEO.ATTRIBUTE10, 
+       MaterialMEO.LAST_UPDATE_DATE, 
+       MaterialMEO.LAST_UPDATED_BY, 
+       MaterialMEO.CREATION_DATE, 
+       MaterialMEO.CREATED_BY, 
+       MaterialMEO.LAST_UPDATE_LOGIN, 
+       MaterialMEO.TOTAL_WEIGHT, 
+       MaterialMEO.TOTAL_VOL, 
+       MaterialMEO.HEIGHT, 
+       MaterialMEO.HEIGHT_UNITS, 
+       MaterialMEO.ID_LOAD_PRESENTATION, 
+       MaterialMEO.LENGHT, 
+       MaterialMEO.LENGHT_UNITS, 
+       MaterialMEO.LOAD_PRESENTATION, 
+       MaterialMEO.TOTAL_WEIGHT_UNITS, 
+       MaterialMEO.UNITS_NUMBER, 
+       MaterialMEO.UNITS_TYPE, 
+       MaterialMEO.WEIGHT, 
+       MaterialMEO.WEIGHT_UNITS, 
+       MaterialMEO.WIDTH, 
+       MaterialMEO.WIDTH_UNITS"
+   FromList="BOLINF.XXGAM_TM_MATERIAL_MT MaterialMEO"
+   BindingStyle="OracleName"
+   CustomQuery="false"
+   RowClass="xxgam.oracle.apps.xbol.tm.freight.server.MaterialMVORowImpl"
+   ComponentClass="xxgam.oracle.apps.xbol.tm.freight.server.MaterialMVOImpl"
+   UseGlueCode="false" >
+   <DesignTime>
+      <Attr Name="_isCodegen" Value="true" />
+      <Attr Name="_version" Value="10.1.3.43.6" />
+      <Attr Name="_codeGenFlag2" Value="Access|Coll|VarAccess" />
+   </DesignTime>
+   <EntityUsage
+      Name="MaterialMEO"
+      Entity="xxgam.oracle.apps.xbol.tm.freight.schema.MaterialMEO" >
+      <DesignTime>
+         <Attr Name="_queryClause" Value="false" />
+      </DesignTime>
+   </EntityUsage>
+   <ViewAttribute
+      Name="IdRequest"
+      IsNotNull="true"
+      EntityAttrName="IdRequest"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_REQUEST" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdMaterial"
+      IsNotNull="true"
+      EntityAttrName="IdMaterial"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_MATERIAL" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdMaterialType"
+      EntityAttrName="IdMaterialType"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_MATERIAL_TYPE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MaterialType"
+      EntityAttrName="MaterialType"
+      EntityUsage="MaterialMEO"
+      AliasName="MATERIAL_TYPE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MaterialDate"
+      EntityAttrName="MaterialDate"
+      EntityUsage="MaterialMEO"
+      AliasName="MATERIAL_DATE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="MaterialTime"
+      EntityAttrName="MaterialTime"
+      EntityUsage="MaterialMEO"
+      AliasName="MATERIAL_TIME" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Distribution"
+      EntityAttrName="Distribution"
+      EntityUsage="MaterialMEO"
+      AliasName="DISTRIBUTION" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdLoadType"
+      EntityAttrName="IdLoadType"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_LOAD_TYPE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LoadType"
+      EntityAttrName="LoadType"
+      EntityUsage="MaterialMEO"
+      AliasName="LOAD_TYPE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdDgr"
+      EntityAttrName="IdDgr"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_DGR" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Dgr"
+      EntityAttrName="Dgr"
+      EntityUsage="MaterialMEO"
+      AliasName="DGR" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdDocument"
+      EntityAttrName="IdDocument"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_DOCUMENT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DocumentDescription"
+      EntityAttrName="DocumentDescription"
+      EntityUsage="MaterialMEO"
+      AliasName="DOCUMENT_DESCRIPTION" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="NReference"
+      EntityAttrName="NReference"
+      EntityUsage="MaterialMEO"
+      AliasName="N_REFERENCE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Shipment"
+      EntityAttrName="Shipment"
+      EntityUsage="MaterialMEO"
+      AliasName="SHIPMENT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute1"
+      EntityAttrName="Attribute1"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE1" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute2"
+      EntityAttrName="Attribute2"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE2" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute3"
+      EntityAttrName="Attribute3"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE3" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute4"
+      EntityAttrName="Attribute4"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE4" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute5"
+      EntityAttrName="Attribute5"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE5" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute6"
+      EntityAttrName="Attribute6"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE6" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute7"
+      EntityAttrName="Attribute7"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE7" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute8"
+      EntityAttrName="Attribute8"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE8" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute9"
+      EntityAttrName="Attribute9"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE9" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Attribute10"
+      EntityAttrName="Attribute10"
+      EntityUsage="MaterialMEO"
+      AliasName="ATTRIBUTE10" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateDate"
+      EntityAttrName="LastUpdateDate"
+      EntityUsage="MaterialMEO"
+      AliasName="LAST_UPDATE_DATE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdatedBy"
+      EntityAttrName="LastUpdatedBy"
+      EntityUsage="MaterialMEO"
+      AliasName="LAST_UPDATED_BY" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreationDate"
+      EntityAttrName="CreationDate"
+      EntityUsage="MaterialMEO"
+      AliasName="CREATION_DATE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="CreatedBy"
+      EntityAttrName="CreatedBy"
+      EntityUsage="MaterialMEO"
+      AliasName="CREATED_BY" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LastUpdateLogin"
+      EntityAttrName="LastUpdateLogin"
+      EntityUsage="MaterialMEO"
+      AliasName="LAST_UPDATE_LOGIN" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TotalWeight"
+      EntityAttrName="TotalWeight"
+      EntityUsage="MaterialMEO"
+      AliasName="TOTAL_WEIGHT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TotalVol"
+      EntityAttrName="TotalVol"
+      EntityUsage="MaterialMEO"
+      AliasName="TOTAL_VOL" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="DetailFlag"
+      IsSelected="false"
+      IsPersistent="false"
+      Type="java.lang.Boolean"
+      ColumnType="NUMBER"
+      AliasName="VIEW_ATTR"
+      Passivate="true"
+      SQLType="BIT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Height"
+      EntityAttrName="Height"
+      EntityUsage="MaterialMEO"
+      AliasName="HEIGHT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="HeightUnits"
+      EntityAttrName="HeightUnits"
+      EntityUsage="MaterialMEO"
+      AliasName="HEIGHT_UNITS" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="IdLoadPresentation"
+      EntityAttrName="IdLoadPresentation"
+      EntityUsage="MaterialMEO"
+      AliasName="ID_LOAD_PRESENTATION" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Lenght"
+      EntityAttrName="Lenght"
+      EntityUsage="MaterialMEO"
+      AliasName="LENGHT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LenghtUnits"
+      EntityAttrName="LenghtUnits"
+      EntityUsage="MaterialMEO"
+      AliasName="LENGHT_UNITS" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="LoadPresentation"
+      EntityAttrName="LoadPresentation"
+      EntityUsage="MaterialMEO"
+      AliasName="LOAD_PRESENTATION" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="TotalWeightUnits"
+      EntityAttrName="TotalWeightUnits"
+      EntityUsage="MaterialMEO"
+      AliasName="TOTAL_WEIGHT_UNITS" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UnitsNumber"
+      EntityAttrName="UnitsNumber"
+      EntityUsage="MaterialMEO"
+      AliasName="UNITS_NUMBER" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="UnitsType"
+      EntityAttrName="UnitsType"
+      EntityUsage="MaterialMEO"
+      AliasName="UNITS_TYPE" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Weight"
+      EntityAttrName="Weight"
+      EntityUsage="MaterialMEO"
+      AliasName="WEIGHT" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="WeightUnits"
+      EntityAttrName="WeightUnits"
+      EntityUsage="MaterialMEO"
+      AliasName="WEIGHT_UNITS" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="Width"
+      EntityAttrName="Width"
+      EntityUsage="MaterialMEO"
+      AliasName="WIDTH" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+   <ViewAttribute
+      Name="WidthUnits"
+      EntityAttrName="WidthUnits"
+      EntityUsage="MaterialMEO"
+      AliasName="WIDTH_UNITS" >
+      <Properties>
+         <Property Name ="CRAWL_VISIBILITY_LEVEL" Value ="GLOBAL" />
+      </Properties>
+   </ViewAttribute>
+</ViewObject>
